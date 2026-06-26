@@ -42,9 +42,6 @@ main{
     width: 100%;
      top:0;
      left:0;
-   /* background-color: #262626; */
-   /* background-color: #2a2a2ac9; */
-   /* background-color: #1a1a1a73; */
    background-color: #242424
     ;
     display:flex;
@@ -87,7 +84,6 @@ form{
     margin-top: .5rem;
 }
 #task-btn {
-    /* width: fit-content !important; */
     padding:.5rem;
     border-radius: .5rem;
     border: none;
@@ -184,28 +180,7 @@ form{
 .right-div-card{
     margin-top:1rem;
 }
-/* #edit:hover{
-    background-color:rgba(199, 199, 9, 0.858);
-    color:white;
-    border: none;
-}
-#complete:hover{
-    background-color: rgba(0, 128, 0, 0.76);
-    color:white;
-    border: none;
-}
-#completed:hover{
-    background-color: rgba(0, 128, 0, 0.76);
-    color:white;
-    border: none;
-}
-
-
-#delete:hover{
-    background-color: rgba(255, 0, 0, 0.699);
-    color:white;
-    border: none;
-} */
+ 
 .fa-sun{
     color: orange;
     font-size:1.5rem;
@@ -272,8 +247,6 @@ form{
 }
  .light-mode .full{
      background-color: #F3F0E8;
-     /* background-color: #daf2fd; */
-     /* background-color: #ddeff7; */
  }
  .light-mode .left-div-top {
     color:#030101;
