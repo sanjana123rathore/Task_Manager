@@ -1,0 +1,484 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+html,body{
+   min-height:100%;
+    width:100%;
+    /* overflow: hidden; */
+    padding: 1%;
+    background-color: #030101;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(228, 228, 246); */
+    background-color: #1A1A1A;
+    /* margin:1rem; */
+    padding:1rem;
+    color: white;
+    border-radius: 1rem;
+}
+main{
+    min-height: 600px;
+    overflow-y: auto;
+}
+.right{
+    display:flex;
+    gap:5rem;
+}
+#create{
+    border-radius: .5rem;
+    padding:1rem;
+}
+.new-task-btn{
+    border-radius: .5rem;
+    padding:1rem;
+}
+.form{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+     top:0;
+     left:0;
+   /* background-color: #262626; */
+   /* background-color: #2a2a2ac9; */
+   /* background-color: #1a1a1a73; */
+   background-color: #242424
+    ;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color:white;
+}
+form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 30%;
+    background-color: #1A1A1A;
+    border-radius: .5rem; 
+    color: white;
+}
+.form input{
+    width: 100%;
+    border-radius: .2rem;
+    padding: 5px;
+    border: none;
+    background-color:#2A2A2A; 
+    color: white;
+}
+.form .top{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: azure;
+    font-size: 2rem;
+}
+.gap{
+    margin-bottom: 1rem;
+}
+.label{
+    margin-top: .5rem;
+}
+#task-btn {
+    /* width: fit-content !important; */
+    padding:.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-div{
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    /* background-color: aqua; */
+    color:white;
+     background-color: #1A1A1A;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.search-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.search-bottom input{
+    width:60%;
+    padding:1rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    
+}
+#categories{
+   width: 20%;
+   border-radius: .5rem;
+   border: none;
+   padding:0px 10px;
+}
+.tracker{
+    margin-top: .5rem;
+}
+.tracker button , .left-div-btns button , .right-div-btns button{
+    border-radius: .5rem;
+    padding:.4rem;
+    background-color: aliceblue;
+    border: none;
+}
+.filter{
+     border-radius: 1.3rem;
+     padding:1rem;
+}
+.full{
+    width:100%;
+     background-color: #1A1A1A;
+    min-height:100vh;
+    padding:1rem 1rem;
+    gap:1rem;
+    display: flex;
+    border-radius:1rem;
+}
+
+.left-div{
+    width:50%;
+    min-height:100%;
+    /* background-color: bisque; */
+    color:white;
+    background-color: #2A2A2A;
+    border-radius: 1rem;
+    padding:1rem;
+    gap:1rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+.left-div-top, .right-div-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-div-card,.right-div-card{
+    background-color: #1f151554;;
+    padding:1rem;
+    border-radius:1rem;
+}
+.right-div{
+    color:white;
+    width: 50%;
+    min-height:100%;
+    background-color: #2A2A2A;
+    border-radius: 1rem;
+    padding:1rem;
+    gap:1rem;
+}
+.right-div-card{
+    margin-top:1rem;
+}
+/* #edit:hover{
+    background-color:rgba(199, 199, 9, 0.858);
+    color:white;
+    border: none;
+}
+#complete:hover{
+    background-color: rgba(0, 128, 0, 0.76);
+    color:white;
+    border: none;
+}
+#completed:hover{
+    background-color: rgba(0, 128, 0, 0.76);
+    color:white;
+    border: none;
+}
+
+
+#delete:hover{
+    background-color: rgba(255, 0, 0, 0.699);
+    color:white;
+    border: none;
+} */
+.fa-sun{
+    color: orange;
+    font-size:1.5rem;
+}
+.fa-moon{
+    color: rgba(255, 198, 91, 0.963);
+    font-size: 1.5rem;
+}
+#create{
+    border:none;
+    border-radius:2rem;
+    padding:0px 20px;
+    font-size: 25px;
+}
+
+
+/* Dark Mode (default) */
+ 
+
+/* Light Mode */
+.light-mode{
+    /* background-color: #F4E0D2; */
+    background-color: #F3F0E8;
+    /* background-color: #daeef7; */
+      
+}
+
+.light-mode nav{
+    background-color:white;
+    color:black;
+}
+
+.light-mode .left-div,
+.light-mode .right-div{
+    background-color: white;
+}
+
+.light-mode .left-div-card,
+.light-mode .right-div-card{
+    background-color: #f6f1ed;
+}
+
+.light-mode .left-div-btns button,
+.light-mode .right-div-btns button{
+    background-color: #e2dedb;
+    color: rgb(0, 0, 0);
+    /* border: rgba(2, 0, 0, 0) !important; */
+}
+
+.light-mode .search-div{
+    background-color: white;
+    color:black;
+}
+.light-mode .search-div input{
+    background-color: #f6f1ed;
+}
+.light-mode .new-task-btn {
+    background-color:black;
+    color:white;
+}
+.light-mode .tracker button{
+    background-color:#f6f1ed;
+    color:black;
+}
+ .light-mode .full{
+     background-color: #F3F0E8;
+     /* background-color: #daf2fd; */
+     /* background-color: #ddeff7; */
+ }
+ .light-mode .left-div-top {
+    color:#030101;
+ }
+ .light-mode .right-div-top {
+    color:#030101;
+ }
+
+ .light-mode #categories{
+    background-color: #f6f1ed;
+ }
+  .light-mode .left-div-card,
+  .light-mode .right-div-card{
+    color:black
+  }
+  .light-mode #create {
+    background-color: #030101;
+  }
+
+
+
+
+
+
+
+
+
+  
+
+  /* ========================= */
+/* Tablet (768px - 1024px) */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+    form{
+        width: 60%;
+    }
+
+    .search-bottom{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-bottom input{
+        width: 100%;
+    }
+
+    #categories{
+        width: 48%;
+        height: 50px;
+    }
+
+    .filter{
+        width: 48%;
+    }
+
+    .full{
+        flex-direction: column;
+    }
+
+    .left-div,
+    .right-div{
+        width: 100%;
+    }
+
+    .right{
+        gap: 1rem;
+    }
+}
+
+
+/* ========================= */
+/* Mobile (Below 768px) */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body{
+        padding: 10px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .new-task-btn{
+        width: 100%;
+    }
+
+    form{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form .top{
+        width: 90%;
+    }
+
+    .search-div h1{
+        font-size: 1.3rem;
+    }
+
+    .search-bottom{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bottom input,
+    #categories,
+    .filter{
+        width: 100%;
+    }
+
+    .tracker{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tracker button{
+        width: 100%;
+    }
+
+    .full{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-div,
+    .right-div{
+        width: 100%;
+    }
+
+    .left-div-card,
+    .right-div-card{
+        padding: 15px;
+    }
+
+    .left-div-btns,
+    .right-div-btns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-div-btns button,
+    .right-div-btns button{
+        width: 100%;
+    }
+
+    .left-div-card h2,
+    .right-div-card h2{
+        font-size: 1.1rem;
+    }
+
+    .left-div-card h4,
+    .right-div-card h4{
+        font-size: 0.9rem;
+        word-wrap: break-word;
+    }
+}
+
+
+/* ========================= */
+/* Small Phones (Below 480px) */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    nav h1{
+        font-size: 1.4rem;
+    }
+
+    .search-div h1{
+        font-size: 1.1rem;
+    }
+
+    #create{
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .new-task-btn{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .left-div-top h1,
+    .right-div-top h1{
+        font-size: 1.2rem;
+    }
+
+    .left-div-top h3,
+    .right-div-top h3{
+        font-size: 1rem;
+    }
+}

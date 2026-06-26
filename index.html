@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <h1>Task Manager</h1>
+        <div class="right"> 
+         <div class="right"> 
+          <button id="create"><i class="fa-solid fa-moon"></i></button>
+          <button class="new-task-btn">Add new Task</button>
+         </div>
+        </div>
+    </nav>
+    
+    <div class="form">
+        <div class="top">
+             <div></div>
+             <div class="cut">x</div>
+        </div>
+        <form action="">
+             <div class="gap">   
+              <label for="title">Enter title:</label>
+              <input type="text" class="label" placeholder="Enter title">
+            </div>
+            <div class="gap">
+              <label for="description">Enter description:</label>
+              <input type="text"  class="label" placeholder="Enter description">
+            </div>
+            <div> 
+              <label for="task">Select a Category:</label>
+              <select name="task" id="task">
+                <option value="select" selected>Select a category</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JavaScript">JavaScript</option>
+           </select>
+        </div>
+        <button id="task-btn">Add Task</button>
+        </form>
+    </div>
+    <div class="search-div">
+       <h1>Search Your Task...</h1>
+       <div class="search-bottom"> 
+         <input id="searchTask"
+         type="text" placeholder="Search tasks...">
+         <select name="categories" id="categories"> 
+            <option value="" selected id="all">All Categories</option>
+           <option value="html">HTML</option>
+           <option value="CSS">CSS</option>
+           <option value="JavaScript">JavaScript</option>
+          </select>
+         <button class="filter clear-filter">Clear filters</button>
+         <button class="filter" id="clear-task">Clear tasks</button>
+     </div>
+     <div class="tracker">
+        <button id="pendingVal"> </button>
+        <button id="completeVal"></button>
+        <button id="totalVal"></button>
+     </div>
+    </div>
+    <div class="full">
+         <!-- <div class="left-div-top">
+             <h1>Pending</h1>
+             <h3>Count</h3>
+            </div> -->
+        <div class="left-div">
+             
+            
+             <!-- <div class="left-div-card">
+                 <h2>Title</h2>
+                 <h4>Description</h4>
+                 <h4>Category</h4>
+                 <h4>ID</h4> 
+                 <hr>
+                 <br>
+                 <div class="left-div-btns">
+                    <button>Edit</button>
+                    <button>Complete</button>
+                    <button>Delete</button>
+                 </div>
+             </div> -->
+        </div>
+        <div class="right-div">
+             <!-- <div class="right-card">
+                
+             </div> -->
+        </div>
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
